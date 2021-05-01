@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>웨않되 - 한국어 오타 수정 필터</title>
+    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.csv.js"></script>
+    <script type="text/javascript" src="options.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <style>
+      .radio_btn {
+        padding-right: 5px;
+      }
+      th:nth-child(1) {
+        width: 60px;
+      }
+      th:nth-child(2) {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #f6f8fa; margin-top: 50px;">
+    <section style="width: 1000px; float: none; margin: 0 auto;">
+      <div class="text-center">
+        <h1>웨않되 - 한국어 오타 수정 필터</h1>
+        <p>웹페이지에 있는 한국어 맞춤법과 오타를 자동으로 수정해줍니다.</p>
+      </div>
+      <div>
+        <div class="text-center">
+          <h2>소개</h2>
+          <p>
+            웹에서 블로그 글이나 뉴스 기사를 볼 때, 맞춤법와 오타 때문에 불편하지 않나요? <br />
+            <strong>"웨않되 - 한국어 오타 수정 필터"</strong>를 통해 그런 불편함을 해결해보세요!!
+          </p>
+        </div>
+
+        <div style="width: 450px; float: none; margin: 0 auto;">
+          <h3>지원하는 맞춤법 교정 목록</h3>
+          <div style="padding-left: 5px;">
+            <span class="radio_btn"><input id="select_all" type="radio" name="checkList" value="select_all" /> <b>전체목록</b></span>
+            <span class="radio_btn"><input id="noun" type="radio" name="checkList" value="noun" /> 명사</span>
+            <span class="radio_btn"><input id="verb" type="radio" name="checkList" value="verb" /> 용언</span>
+            <span class="radio_btn"><input id="adverb" type="radio" name="checkList" value="adverb" /> 부사</span>
+          </div>
+          <table id="ErrataTable" class="table table-hover">
+            <thead>
+              <th>#</th>
+              <th>Errata</th>
+              <th>Correction</th>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <div></div>
+      <div class="text-center">
+        <h2>문의하기</h2>
+        <p>오류 접수 및 기능 제안은 아래의 메일로 문의해주세요.</p>
+        <a href="mailto:bluehornblues@gmail.com">bluehornblues@gmail.com</a>
+      </div>
+    </section>
+    <footer style="background-color: #e7e7e7; margin-top: 30px; padding-top: 20px; padding-bottom: 15px;">
+      <div class="text-center" style="padding-bottom: 5px;">
+        <a href="https://github.com/BlueHorn07" target="_blank"><img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" /></a>
+      </div>
+      <div class="text-center">
+        ©2020, bluehorn07
+      </div>
+    </footer>
+  </body>
+</html>
